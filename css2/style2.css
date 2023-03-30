@@ -1,0 +1,276 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+
+.header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.menu {
+    display: flex;
+    
+}
+
+.menu > li {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu > li > a:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+    margin-right: 10px;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+
+.header > img {
+    height: 70px;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.pizza {
+    background-image: url(img/img/pizza.jpg);
+    height: 500px;
+    display: flex;
+    box-shadow: 2px 2px green;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top center;
+    flex-direction: column;
+}
+
+
+
+
+
+.pizza > h1, .pizza > a {
+    position: absolute;
+    text-align: center;
+}
+
+.pizza > h1 {
+    color: white;
+    text-shadow: 4px 6px 6px black;
+    font-size: 70px;
+}
+
+.pizza > a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    margin-top: 320px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.pizza > a:hover {
+    background-color: rgba(128, 113, 113, 0.459);
+    padding: 20px;
+    margin: 20px;
+    transform: scale(1.1);
+    margin-top: 320px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.5s;
+}
+
+/* Estilizando elementos do corpo da página */
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+h2 {
+    color: rgb(23, 201, 23);
+}
+
+
+hr {
+    border: none;
+    background: rgb(167, 0, 0);
+    background: linear-gradient(90deg, rgba(125,78,11,0) 0%, rgba(194,158,11,1) 51%, rgba(198,255,0,0) 100%);
+    height: 5px;
+    margin: 10px 20px;
+    
+}
+
+
+/* Estilizando os cards de sabores */
+
+.sabores {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.sabor {
+    margin: 10px;
+    background: rgb(4,251,3);
+    background: linear-gradient(180deg, rgba(4,251,3,1) 60%, rgba(7,88,14,1) 100%);
+    border-radius: 15px 15px;
+    box-shadow: 3px 3px 3px black;
+    
+}
+
+.sabor:hover {
+    margin: 10px;
+    background-color: green;
+    border-radius: 15px 15px;
+    max-width: 250px;
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.sabor > img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+.nome {
+    color: white;
+    font-weight: bold;
+}
+
+.preço {
+    background-color: yellow;
+    padding: 4px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+
+.sabores2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow-x: scroll;
+    padding-left: 240px;
+}
+
+.sabores2::-webkit-scrollbar {
+    display: none
+}
+
+
+.sabor2 {
+    margin: 5px;
+    background: rgb(4,251,3);
+    background: linear-gradient(180deg, rgba(4,251,3,1) 60%, rgba(7,88,14,1) 100%);
+    border-radius: 15px 15px;
+    cursor: pointer;
+}
+
+.sabor2:hover {
+    margin: 5px;
+    background-color: green;
+    border-radius: 15px 15px;
+    transform: scale(1.01);
+    transition-duration: 0.5;
+}
+
+
+footer {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    align-items: center;
+    box-shadow: 10px 10px 10px 8px green;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right > ul > li > a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2px;
+}
+
+
+li {
+    list-style: none;
+    margin: 4px;
+}
+
+
+.footer-left > ul > li {
+    margin: 2px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width:500px) {
+    .sabores {
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .sabor {
+        min-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
